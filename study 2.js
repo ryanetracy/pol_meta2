@@ -26,7 +26,7 @@ const psychoJS = new PsychoJS({
 
 // open window:
 psychoJS.openWindow({
-  fullscr: false,
+  fullscr: true,
   color: new util.Color([-1, -1, -1]),
   units: 'pix',
   waitBlanking: true,
@@ -7448,7 +7448,7 @@ function img_gen_trials_loopLoopBegin(img_gen_trials_loopLoopScheduler, snapshot
       psychoJS: psychoJS,
       nReps: 1, method: TrialHandler.Method.RANDOM,
       extraInfo: expInfo, originPath: undefined,
-      trialList: TrialHandler.importConditions(psychoJS.serverManager, (("condition" + expInfo["condition"]) + ".xlsx"), '1'),
+      trialList: (("condition" + expInfo["condition"]) + ".xlsx"),
       seed: undefined, name: 'img_gen_trials_loop'
     });
     psychoJS.experiment.addLoop(img_gen_trials_loop); // add the loop to the experiment
