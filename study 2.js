@@ -9583,7 +9583,7 @@ function police_fight_flight_loopLoopBegin(police_fight_flight_loopLoopScheduler
     // set up handler to look after randomisation of conditions etc
     police_fight_flight_loop = new TrialHandler({
       psychoJS: psychoJS,
-      nReps: int(block_name == 'police_fight_flight_set'), method: TrialHandler.Method.RANDOM,
+      nReps: Number(block_name == 'police_fight_flight_set'), method: TrialHandler.Method.RANDOM,
       extraInfo: expInfo, originPath: undefined,
       trialList: (("police_fight_flight" + expInfo["condition"]) + ".xlsx"),
       seed: undefined, name: 'police_fight_flight_loop'
@@ -9646,7 +9646,7 @@ function police_avoidance_loopLoopBegin(police_avoidance_loopLoopScheduler, snap
     // set up handler to look after randomisation of conditions etc
     police_avoidance_loop = new TrialHandler({
       psychoJS: psychoJS,
-      nReps: int(block_name == 'police_avoidance_set'), method: TrialHandler.Method.RANDOM,
+      nReps: Number(block_name == 'police_avoidance_set'), method: TrialHandler.Method.RANDOM,
       extraInfo: expInfo, originPath: undefined,
       trialList: 'police_avoidance.xlsx',
       seed: undefined, name: 'police_avoidance_loop'
@@ -9709,7 +9709,7 @@ function gblems_loopLoopBegin(gblems_loopLoopScheduler, snapshot) {
     // set up handler to look after randomisation of conditions etc
     gblems_loop = new TrialHandler({
       psychoJS: psychoJS,
-      nReps: int(block_name == 'gblems_set'), method: TrialHandler.Method.RANDOM,
+      nReps: Number(block_name == 'gblems_set'), method: TrialHandler.Method.RANDOM,
       extraInfo: expInfo, originPath: undefined,
       trialList: 'gblems_target.xlsx',
       seed: undefined, name: 'gblems_loop'
@@ -9772,7 +9772,7 @@ function gblems_expanded_loopLoopBegin(gblems_expanded_loopLoopScheduler, snapsh
     // set up handler to look after randomisation of conditions etc
     gblems_expanded_loop = new TrialHandler({
       psychoJS: psychoJS,
-      nReps: int(block_name == 'gblems_expanded_set'), method: TrialHandler.Method.RANDOM,
+      nReps: Number(block_name == 'gblems_expanded_set'), method: TrialHandler.Method.RANDOM,
       extraInfo: expInfo, originPath: undefined,
       trialList: 'gblems_expanded.xlsx',
       seed: undefined, name: 'gblems_expanded_loop'
@@ -9835,7 +9835,7 @@ function group_membership_loopLoopBegin(group_membership_loopLoopScheduler, snap
     // set up handler to look after randomisation of conditions etc
     group_membership_loop = new TrialHandler({
       psychoJS: psychoJS,
-      nReps: int(block_name == 'group_mem_set'), method: TrialHandler.Method.RANDOM,
+      nReps: Number(block_name == 'group_mem_set'), method: TrialHandler.Method.RANDOM,
       extraInfo: expInfo, originPath: undefined,
       trialList: 'group_membership.xlsx',
       seed: undefined, name: 'group_membership_loop'
